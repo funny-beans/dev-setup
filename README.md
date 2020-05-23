@@ -54,6 +54,7 @@ brew cask install iterm2
 * Preferences -> Profiles -> Window -> Columns: 140 & Rows: 50
 
 ## SublimeText
+Text Editor
 https://www.sublimetext.com/
 ```
 brew cask install sublime-text
@@ -74,13 +75,13 @@ brew cask install sublime-text
 	"theme": "ayu-mirage.sublime-theme"
 }
 ```
-### Kdiff3
+## Kdiff3
+Diff Tool
 http://kdiff3.sourceforge.net/
 ```
 brew cask install https://raw.githubusercontent.com/Homebrew/homebrew-cask/6a96e5ea44803e52a43c0c89242390f75d1581ab/Casks/kdiff3.rb
 ```
-### Git
-Set Kdiff3 as default diff and merge tool
+Set Kdiff3 as default diff and merge tool in git
 ```
 git config --global --edit
 ```
@@ -101,4 +102,17 @@ git config --global --edit
         keepTemporaries = false
 [mergetool "kdiff3"]
         path = /usr/local/bin/kdiff3
+```
+## JDK
+Add cask tap
+```
+brew tap homebrew/cask-versions
+```
+Install JDK
+```
+brew cask install java11
+```
+# VS Code
+```
+brew cask install visual-studio-code
 ```
