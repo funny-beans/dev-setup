@@ -41,6 +41,7 @@ git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
 ```
 ### .zshrc
 See [.zhrc](.zshrc)
+
 ## brew
 https://brew.sh/
 ```
@@ -63,16 +64,16 @@ brew cask install sublime-text
 * Preferences (cmd+,) -> 
 ```
 {
-	"color_scheme": "Packages/ayu/ayu-mirage.sublime-color-scheme",
-	"font_size": 16,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"margin": 2,
-	"open_files_in_new_window": false,
-	"tab_size": 2,
-	"theme": "ayu-mirage.sublime-theme"
+"color_scheme": "Packages/ayu/ayu-mirage.sublime-color-scheme",
+"font_size": 16,
+"ignored_packages":
+[
+	"Vintage"
+],
+"margin": 2,
+"open_files_in_new_window": false,
+"tab_size": 2,
+"theme": "ayu-mirage.sublime-theme"
 }
 ```
 ## Kdiff3
