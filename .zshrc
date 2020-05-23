@@ -58,9 +58,6 @@ alias glog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%
 # Java
 alias java11='export JAVA_HOME=$JAVA_11_HOME'
 
-# default to Java 11
-java11
-
 ## other aliases
 alias zshrc="nano ~/.zshrc"
 alias topten="history | commands | sort -rn | head"
@@ -78,3 +75,6 @@ alias ...='cd ../..'
 commands() {
   awk '{a[$2]++}END{for(i in a){print a[i] " " i}}'
 }
+
+# default to Java 11
+java11
