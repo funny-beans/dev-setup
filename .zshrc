@@ -17,13 +17,9 @@ plugins=(
 
 # source
 source $ZSH/oh-my-zsh.sh
-#source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# z extension for browsingh
-if command -v brew >/dev/null 2>&1; then
-  # Load rupa's z if installed
-  [ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
-fi
+# exports
+export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
 
 # user configuration
 # custom aliases
@@ -58,6 +54,12 @@ alias grh="git reset HEAD~" # last commit
 alias gac="git add . && git commit -a -m "
 alias gsu="git gpush --set-upstream origin "
 alias glog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches"
+
+# Java
+alias java11='export JAVA_HOME=$JAVA_11_HOME'
+
+# default to Java 11
+java11
 
 ## other aliases
 alias zshrc="nano ~/.zshrc"
