@@ -1,6 +1,6 @@
 # My Setup
 
-## OS Setup
+## MAC OS Setup
 ### General
 Appearance: Dark
 ### Users & Groups
