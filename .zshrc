@@ -7,16 +7,19 @@ plugins=(
   bundler
   dotenv
   osx
-  rake
-  zsh-autosuggestions
+  rake  
   last-working-dir
   web-search
+  zsh-z
+  zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
+# source
 source $ZSH/oh-my-zsh.sh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# z extension for browsing
+# z extension for browsingh
 if command -v brew >/dev/null 2>&1; then
   # Load rupa's z if installed
   [ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
