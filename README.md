@@ -29,7 +29,7 @@ https://github.com/agkozak/zsh-z
 git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
 ```
 ### .zshrc
-[.zhrc] (.zshrc)
+See [.zhrc](.zshrc)
 ## iTerm2
 https://www.iterm2.com/
 ```
