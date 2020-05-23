@@ -1,6 +1,17 @@
 # My Setup
 
 ## OS Setup
+### General
+Appearance: Dark
+### Users & Groups
+* Login Options -> Show fast user switching menu as "Icon"
+
+### Trackpad
+Tap to click: Checked
+
+### Keyboard
+Key Repeat: Fast
+Delay Until Repeat: Short
 
 ## Terminal setup
 ### zsh
@@ -30,6 +41,11 @@ git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
 ```
 ### .zshrc
 See [.zhrc](.zshrc)
+## brew
+https://brew.sh/
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
 ## iTerm2
 https://www.iterm2.com/
 ```
@@ -45,5 +61,3 @@ https://git-scm.com/
 ```
 brew install git
 ```
-
-
