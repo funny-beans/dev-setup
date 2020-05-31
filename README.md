@@ -47,13 +47,18 @@ https://brew.sh/
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
+## Source Code Pro Font
+https://github.com/adobe-fonts/source-code-pro
+```
+brew cask install font-source-code-pro
+```
 ## iTerm2
 https://www.iterm2.com/
 ```
 brew cask install iterm2
 ```
-* Preferences -> Profiles -> Window -> Columns: 140 & Rows: 50
-
+* Preferences -> Profiles -> Window -> Columns: 125 & Rows: 45
+* Preferences -> Profiles -> Text -> Font "Source Code Prod" : Size 13
 ## SublimeText
 Text Editor
 https://www.sublimetext.com/
@@ -64,16 +69,24 @@ brew cask install sublime-text
 * Preferences (cmd+,) -> 
 ```
 {
-  "color_scheme": "Packages/ayu/ayu-mirage.sublime-color-scheme",
-  "font_size": 16,
-  "ignored_packages":
-  [
-    "Vintage"
-  ],
-  "margin": 2,
-  "open_files_in_new_window": false,
-  "tab_size": 2,
-  "theme": "ayu-mirage.sublime-theme"
+	"color_scheme": "Packages/ayu/ayu-mirage.sublime-color-scheme",
+	"theme": "ayu-mirage.sublime-theme",
+	"ignored_packages":
+	[
+		"Vintage",
+		"Markdown"
+	],
+	"font_face": "Source Code Pro",
+	"font_size": 13,
+	"margin": 2,
+	"tab_size": 2,	
+	"rulers":
+    [
+        120
+    ],
+  "translate_tabs_to_spaces": true,
+  "word_wrap": true,
+  "open_files_in_new_window": false
 }
 ```
 ## Kdiff3
@@ -113,7 +126,7 @@ Install JDK
 ```
 brew cask install java11
 ```
-# VS Code
+## VS Code
 ```
 brew cask install visual-studio-code
 ```
