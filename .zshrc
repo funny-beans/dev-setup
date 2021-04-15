@@ -4,10 +4,10 @@ ZSH_THEME="robbyrussell"
 
 plugins=(
   git
-  bundler
+  #https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/dotenv  
   dotenv
-  osx
-  rake  
+  #https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/osx
+  osx  
   last-working-dir
   web-search
   zsh-z
@@ -19,7 +19,11 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # exports
-export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
+jdk() {
+        version=$1
+        export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
+        java -version
+}
 
 # user configuration
 # custom aliases
@@ -58,6 +62,26 @@ alias glog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%
 # Java
 alias java11='export JAVA_HOME=$JAVA_11_HOME'
 
+## K8 aliases
+alias k="kubectl"
+alias kg="kubectl get"
+alias kd="kubectl describe"
+alias kgpo="kubectl get pods"
+alias kdpo="kubectl describe pods"
+alias kgdep="kubectl get deployment"
+alias kgno="kubectl get nodes"
+alias kdno="kubectl describe nodes"
+alias kgns="kubectl config view --minify | grep namespace:"
+alias kdns="kubectl describe namespaces"
+
+## oke functions
+oke() {
+  export KUBECONFIG=~/dev/config/oke/oal-master-kubeconfig.txt
+  export HTTP_PROXY=http://www-proxy-hqdc.us.oracle.com:80
+  export HTTPS_PROXY=http://www-proxy-hqdc.us.oracle.com:80
+  k config get-contexts
+}
+
 ## other aliases
 alias zshrc="nano ~/.zshrc"
 alias topten="history | commands | sort -rn | head"
@@ -77,4 +101,4 @@ commands() {
 }
 
 # default to Java 11
-java11
+jdk 11
